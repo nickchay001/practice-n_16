@@ -1,0 +1,41 @@
+.page__full-name {}
+
+.full-name {}
+
+.full-name__container {
+	padding: 0px 20px;
+	@media (max-width: 768px) {
+		padding: 0px 15px;
+	}
+
+	@media (max-width: 425px) {
+		padding: 0px 10px;
+	}
+}
+
+.full-name__wrapper {
+	background: #4B321D;
+	border-radius: 16px;
+	padding: 84px 60px 110px 60px;
+	@media (max-width: 1024px) {
+		padding: 40px;
+	}
+	@media (max-width: 768px) {
+		padding: 20px;
+	}
+	@media (max-width: 425px) {
+		padding: 15px;
+	}
+}
+
+.full-name__title {
+	max-width: 1181px;
+	color: #F1F1EB;
+}
+
+.full-name__text {
+	margin-top: 41px;
+	font-size: 26px;
+	line-height: 140%;
+	color: #F1F1EB;
+}

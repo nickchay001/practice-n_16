@@ -1,0 +1,151 @@
+/*-----RESETS STYLES-------*/
+
+@import "nullstyle.scss";
+
+
+
+/*--------------FONTS----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*------------BODY-----------------*/
+
+body {
+	font-family: Poppins;
+	font-weight: 400;
+}
+
+/*------BODY.LOCK FOR BURGER-------*/
+
+body._lock {
+	overflow: hidden;
+}
+
+
+/*-----------WRAPPER--------------*/
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*--------------CONTAINER----------*/
+
+[class*="__container"] {
+	position: relative;
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px 60px;
+	box-sizing: content-box;
+
+	@media (max-width: 1024px) {
+		padding: 0px 20px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 0px 15px;
+	}
+
+	@media (max-width: 425px) {
+		padding: 0px 10px;
+	}
+}
+
+/*------------CONTAINER-BIG--------*/
+/*
+[class*="__container-big"] {
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+*/
+
+
+/*----------BIG-TITLE-----------*/
+
+.big-title {
+	font-size: 80px;
+	line-height: 125%;
+	color: #4B321D;
+
+	@media (max-width: 1024px) {
+		font-size: 70px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 60px;
+	}
+
+	@media (max-width: 600px) {
+		font-size: 50px;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 400px) {
+		font-size: 35px;
+	}
+}
+
+/*----------BUTTON-----------*/
+.button {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 144%;
+	border: 2px solid #4B321D;
+	border-radius: 3px;
+	color: #4B321D;
+	padding: 11px 17px;
+	transition-duration: 400ms;
+	&:hover{
+		color: #fff;
+		background-color: #4B321D;
+	}
+}
+
+/*----------TITLE-----------*/
+
+.title {}
+
+/*----------SUB-TITLE-----------*/
+
+.sub-title {}
+
+/*----------PARAGRAPH-----------*/
+
+.paragraph {}
+
+
+
+
+/*-----------IMPORTS----------------*/
+
+/*-----------HEADER----------------*/
+
+@import "header.scss";
+
+/*-----------MAIN-------------*/
+
+main {
+	flex: 1 1 auto;
+}
+
+@import "page__main-title.scss";
+@import "page__banner.scss";
+@import "page__services.scss";
+@import "page__full-name.scss";
+@import "page__question.scss";
+
+
+
+/*-----------FOOTER-----------*/
+
+@import "footer.scss";
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Aloha"})
+
+<body>
+	@@include('html/header.html', {})
+	<main class="page">
+		<section class="page__main-title main-title">
+			<div class="main-title__container">
+				<h1 class="main-title__title big-title">Creating purpose-built brands & websites</h1>
+			</div>
+		</section>
+		<div class="page__banner banner">
+			<div class="banner__container">
+				<div class="banner__image"><img src="@img/page__banner/banner.jpg" alt="banner"></div>
+			</div>
+		</div>
+		<section class="page__services services">
+			<div class="services__container">
+				<h2 class="services__title big-title">I help emerging brands get their footing in today's digital world.
+				</h2>
+				<a href="" class="services__button button">See my work</a>
+				<div class="services__gallery gallery-services">
+					<div class="gallery-services__image"><img src="@img/page__services/man-with-bike.jpg" alt=""></div>
+					<div class="gallery-services__info">
+						<h4 class="gallery-services__title">My services are perfect for companies that are just getting
+							started</h4>
+						<a href="" class="gallery-services__button button">Learn more</a>
+					</div>
+				</div>
+				<div class="services__gallery gallery-services gallery-services__down">
+					<div class="gallery-services__info _down-info">
+						<h4 class="gallery-services__title">I'm always on the go. Follow along!</h4>
+						<a href="" class="gallery-services__button button">@aloha</a>
+					</div>
+					<div class="gallery-services__image"><img src="@img/page__services/car-near-the-sea.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page__full-name full-name">
+			<div class="full-name__container">
+				<div class="full-name__wrapper">
+					<h3 class="full-name__title big-title">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+					</h3>
+					<p class="full-name__text">Full Name, CEO at Client</p>
+				</div>
+			</div>
+		</section>
+		<section class="page__question question">
+			<div class="question__container">
+				<h3 class="question__title big-title">
+					Seem like a good fit?
+				</h3>
+				<a href="" class="question__button button">Let's talk!</a>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html', {})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
